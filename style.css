@@ -1,0 +1,68 @@
+*{
+	cursor: none;
+	-webkit-user-select: none;
+	--cols: white;
+}
+
+body{
+	overflow: hidden;
+	background-color: rgb(0, 0, 0);
+	
+}
+
+::selection{
+	background-color: none;
+	color: none;
+}
+
+.cursor {
+  width: 10px;
+  height: 10px;
+	border-radius: 50%;
+  background: white;
+  position: absolute;
+  left: var(--mouse-x);
+  top: var(--mouse-y);
+	box-shadow: 0 0 10px var(--cols),
+		     0 0 20px var(--cols),
+		     0 0 40px var(--cols),
+		     0 0 80px var(--cols),
+		     0 0 120px var(--cols),
+		     0 0 160px var(--cols);
+}
+
+#score{
+	font-size: 180px;
+	text-align: center;
+	font-family: 'Kirang Haerang', cursive;
+	color: var(--cols);
+	text-shadow: 0 0 10px var(--cols),
+		     0 0 20px var(--cols),
+		     0 0 40px var(--cols),
+		     0 0 80px var(--cols),
+		     0 0 120px var(--cols),
+		     0 0 160px var(--cols);
+	
+}
+
+button {
+  padding: 5px 30px;
+  font-size: 15px;
+  font-family: 'Trebuchet MS';
+  color: rgb(0, 0, 0);
+	background-color: var(--cols);
+	box-shadow: 0 0 10px var(--cols),
+		     0 0 20px var(--cols),
+		     0 0 40px var(--cols),
+		     0 0 80px var(--cols),
+		     0 0 120px var(--cols),
+		     0 0 160px var(--cols);
+	border: none;
+}
+
+.leaderboard{
+	position: absolute;
+	margin-top: -160px;
+	color: var(--cols);
+	font-weight: 700;
+}
