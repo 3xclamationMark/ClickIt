@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html onclick = "addScore()">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Click It!</title>
+		<!-- Creates the favicon-->
+		<link rel="shortcut icon" id = "favicon" type="image/jpg" href="https://image.flaticon.com/icons/png/512/99/99188.png"/>
+		<!-- Attaches the CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+		<!-- Preloads the font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
+  </head>
+	
+	<body>
+		<div class = 'cursor'></div>
+
+		<!-- Leaderboard -->
+		<ol class = 'leaderboard'>
+			
+		</ol>
+		<!-- The score -->
+		<p id = "score"></p>
+		<!-- The save and reset buttons -->
+		<button id = "save" onclick = "save()">Save</button>
+		<button id = "reset" onclick = "reset()">Reset</button>
+		<!-- Attaches the Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
